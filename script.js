@@ -36,7 +36,7 @@ const renderWeather = function (weather) {
 
 const getWeather = async function (location) {
   const res = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=111b1bda35af42509a4114647242001&q=${location}`
+    `https://api.weatherapi.com/v1/current.json?key=111b1bda35af42509a4114647242001&q=${location}`
   );
   const weather = await res.json();
   // console.log(weather);
